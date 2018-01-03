@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <parameter name="browser" value="firefox"/>
+  <listeners>
+    <listener class-name="frameworkLibrary.DriverClass"/>
+  </listeners>
+  <test name="Test(failed)">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="testScriptDefinitions.Module1.SampleTestScript">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- testScriptDefinitions.Module1.SampleTestScript -->
+      <class name="testScriptDefinitions.Module1.TC101_AddEmergencyContactsAndVerify">
+        <methods>
+          <include name="setUp"/>
+          <include name="scriptDefinition"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- testScriptDefinitions.Module1.TC101_AddEmergencyContactsAndVerify -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
